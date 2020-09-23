@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let firstValue = prompt("Please type your first number");
+        const operator = prompt("Please type your operator");
+        let secondValue = prompt('Please type your second number')
+
+        firstValue = parseInt(firstValue)
+        secondValue = parseInt(secondValue)
+
+        switch (operator) {
+            case "+":
+                console.log(firstValue + secondValue)
+                break;
+            case "-":
+                console.log(firstValue - secondValue)
+                break;
+            case "*":
+                console.log(firstValue * secondValue)
+                break;
+            case "/":
+                console.log(firstValue / secondValue)
+                break;
+            default:
+                console.log("Invalid Operator")
+                break;
+        }
+
+    </script>
+</body>
+
+</html>
